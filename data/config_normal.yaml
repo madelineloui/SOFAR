@@ -1,0 +1,195 @@
+out_file_name: /Users/mloui/Documents/STAR/SOFAR/data/simulated/normal.csv
+sample_rate: 10
+orbit_period: 90
+num_orbits: 5
+
+telemetry:
+    Heater_V:
+        mean: 4
+        std: 0.125
+    OBC_V1:
+        mean: 1.5
+        std: 0.05
+    OBC_V3:
+        mean: 3.3
+        std: 0.05
+    OBC_V8:
+        mean: 8
+        std: 0.05
+    OBC_I1:
+        mean: 0.5
+        std: 0.125
+    OBC_I3:
+        mean: 1
+        std: 0.125
+    V_bat:
+        sun:
+            mean: 8.4
+            std: 0.25
+            dur: 0.6111
+        ecl:
+            mean: 6.2
+            std: 0.25
+            dur: 0.3889
+    I_bus:
+        sun:
+            mean: 1
+            std: 0.25
+            dur: 0.6111
+        ecl:
+            mean: 0.5
+            std: 0.125
+            dur: 0.3889
+    Heater_I:
+        sun:
+            mean: 0.2
+            std: 0.05
+            dur: 0.6111
+        ecl:
+            mean: 3
+            std: 0.25
+            dur: 0.3889
+    OBC_Temp:
+        sun:
+            mean: 25
+            std: 2
+            dur: 0.6111
+        ecl:
+            mean: 10
+            std: 2
+            dur: 0.3889
+    Bat_Temp:
+        sun:
+            mean: 30
+            std: 2
+            dur: 0.6111
+        ecl:
+            mean: 23
+            std: 2
+            dur: 0.3889
+    Panel_Temp:
+        sun:
+            min: 0
+            max: 20
+            std: 0.5
+            dur: 0.6111
+        ecl:
+            min: 0
+            max: 20
+            std: 0.5
+            dur: 0.3889
+    OBC_I8:
+        baseline:
+            mean: 0.2
+            std: 0.05
+        active:
+            mean: 2
+            std: 0.5
+    Radio_I8:
+        dl_per_day: 16
+        baseline:
+            mean: 0.2
+            std: 0.05
+        active:
+            mean: 2
+            std: 0.5
+            dur: 10
+
+faults:
+    IRF:
+        random: 
+            name: IRF_R
+            prob: 0
+            min: -999
+            max: 1024
+            columns: []
+        stale:
+            name: IRF_S
+            prob: 0
+            min: -999
+            max: 1024
+            #duration
+            mean: 1000
+            std: 500
+            columns: []
+        zeros:
+            name: IRF_Z
+            prob: 0
+            #duration
+            mean: 1000
+            std: 500
+            columns: []
+    Thermal:
+        hot: 
+            name: K_H
+            prob: 0
+            min: 0
+            max: 200
+            #duration
+            mean: 1000
+            std: 500
+            columns: []
+        failure: 
+            name: K_F
+            prob: 0
+            min: 0
+            max: 200
+            low: 5
+            low_std: 3
+            high: 55
+            high_std: 3
+            stale_prob: 0.3
+            #duration
+            mean: 1000
+            std: 500
+            columns: []
+        component: 
+            name: K_C
+            prob: 0
+            min: -50
+            max: 200
+            value_std: 2
+            #duration
+            mean: 1000
+            std: 500
+            columns: []
+        loss:
+            name: K_L
+            prob: 0
+            min: 0
+            max: 200
+            #duration
+            mean: 1000
+            std: 500
+    Current:
+        over:
+            name: I_O
+            prob: 0
+            min: 0
+            max: 2
+            #duration
+            mean: 1000
+            std: 500
+            columns: []
+        under:
+            name: I_U
+            prob: 0
+            min: 0
+            max: 2
+            #duration
+            mean: 1000
+            std: 500
+            columns: []
+    Reset:
+        clock:
+            name: SR_clock_resets_at_zero_on_reset
+            prob: 0
+            #duration
+            mean: 5000
+            std: 500
+        noclock:
+            name: SR_clock_jumps_to_later_time_on_reset
+            prob: 0
+            #duration
+            mean: 5000
+            std: 500
