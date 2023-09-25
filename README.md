@@ -1,12 +1,25 @@
 # SOFAR
 
-### Create Python virtual env
+### Create virtual environment
 
-Using Python 3.10.11
+Using Python 3.10.11 (>3.8 should work)
 
-TODO - dependencies
+Dependencies:
+* torch
+* sklearn
+* numpy
+* pandas
+* seaborn
+* xgboost
+* matplotlib
+* tqdm
+* jupyter
+* pickle
+* tigramite (see below)
 
 ### Installing Tigramite
+
+Download files and follow instructions from https://github.com/jakobrunge/tigramite to install Tigramite in the base directory (needed for PCMCI).
 
 `cd tigramite`
 
