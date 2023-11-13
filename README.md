@@ -53,3 +53,4 @@ C. Classifier
 * Example representation outputs using faulting data found in `/models/ensemble_outputs`
 * Example trained XGboost model found in `models/xgboost`
 * Evaluation found in `algorithms/ensemble_xgboost.ipynb`
+* XGBoost visualization found in algorithms/xgboost_viz.py
