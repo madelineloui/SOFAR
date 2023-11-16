@@ -14,8 +14,6 @@ Dependencies:
 * matplotlib
 * tqdm
 * jupyter
-* pickle
-* pdb
 * tigramite (see below)
 
 #### Installing Tigramite
