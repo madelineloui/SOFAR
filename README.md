@@ -2,9 +2,11 @@
 
 ### Create virtual environment
 
-Using Python 3.10.11 (>3.8 should work)
+Tested using Python 3.10.11, however >3.8 should work. 
 
-Dependencies:
+Create virtual environment, for example using `python3.10 -m venv env`
+
+Install dependencies with `pip install -r requirements.txt`, which will install the following dependencies:
 * torch
 * sklearn
 * numpy
