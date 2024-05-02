@@ -3,7 +3,7 @@
 Data-driven ML fault detection and attribution and satellite telemetry simulation tool (SatFaultSim)
 
 Authors:
-* Madeline Anderson, MIT
+* Madeline Loui Anderson, MIT
 * Kerri Cahoy, MIT
 * Jeremy Muesing, Auria Space
 * Kenneth Center, Auria Space
