@@ -1,4 +1,6 @@
-# SOFAR
+# SOFAR: Satellite Onboard Fault Attribution and Response
+
+Data-driven ML fault detection and attribution and satellite telemetry simulation tool (SatFaultSim)
 
 ### Create virtual environment
 
