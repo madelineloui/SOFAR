@@ -2,6 +2,12 @@
 
 Data-driven ML fault detection and attribution and satellite telemetry simulation tool (SatFaultSim)
 
+Authors:
+* Madeline Anderson, MIT
+* Kerri Cahoy, MIT
+* Jeremy Muesing, Auria Space
+* Kenneth Center, Auria Space
+
 ### Create virtual environment
 
 Tested using Python 3.10.11, however >3.8 should work. 
@@ -56,3 +62,8 @@ C. Classifier
 * Example trained XGboost model found in `models/xgboost`
 * Evaluation found in `algorithms/ensemble_xgboost.ipynb`
 * XGBoost visualization found in algorithms/xgboost_viz.py
+
+### Citation
+
+Code implementation of the following paper:
+[SmallSat paper]
