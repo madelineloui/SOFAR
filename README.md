@@ -65,5 +65,10 @@ C. Classifier
 
 ### Citation
 
-Code implementation of the following paper:
-[SmallSat paper]
+Code implementation of the following paper, published at SmallSat 2024:
+```bibtex
+@article{anderson2024ensemble,
+  title={Ensemble Learning for Autonomous Onboard Satellite Fault Diagnosis With Validation Tool},
+  author={Anderson, Madeline and Muesing, Jeremy and Cahoy, Kerri and Center, Kenneth},
+  year={2024}
+}
